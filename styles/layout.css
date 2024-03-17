@@ -1,0 +1,27 @@
+body {
+    display: grid;
+    grid-template-columns: var(--toolbar-size) auto var(--toolbar-size);
+    height: 100svh;
+    overflow: hidden;
+}
+
+main {
+    position: relative;
+    overflow: hidden;
+}
+
+@media (orientation: portrait) {
+    body {
+        grid-template-columns: auto;
+        grid-template-rows: var(--toolbar-size) auto var(--toolbar-size);
+    }
+
+    header {
+        grid-row: 3;
+    }
+
+    main {
+        grid-row: 2;
+        border-radius: 20px 20px 0 0;
+    }
+}

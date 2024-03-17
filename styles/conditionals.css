@@ -1,0 +1,11 @@
+#show-target:checked~#target {
+    right: 0;
+}
+
+#show-target:checked~#tools>li>label[for="show-target"]::before {
+    transform: translateX(100%);
+}
+
+#show-target:not(:checked)~#percent-match {
+    opacity: 0;
+}

@@ -1,0 +1,23 @@
+:root {
+    --theme-color-0: #e1e8f9;
+    --theme-color-1: #02050d;
+    --theme-color-2: #2a64cf;
+    --theme-color-3: #25197b;
+    --theme-color-4: #48209d;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --theme-color-0: #060d1e;
+        --theme-color-1: #f2f5fd;
+        --theme-color-2: #3069d5;
+        --theme-color-3: #9084e6;
+        --theme-color-4: #8a62df;
+    }
+}
+
+@media (prefers-reduced-motion) {
+    * {
+        transition: none !important;
+    }
+}
